@@ -14,7 +14,7 @@ pipeline {
                 // sh 'ls'
                 // sh 'cd ..'
                 // sh 'ls'
-                powershell 'Write-Host \'Hello World!\''
+                sh 'Write-Host \'Hello World!\''
             }
         }
         stage('Test') {
