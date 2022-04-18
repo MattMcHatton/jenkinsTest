@@ -1,16 +1,19 @@
 pipeline {
     agent any
 
+    properties ([
+
+    ])
+
     stages {
         stage('Build') {
             steps {
-                sh 'make' 
-                archiveArtifacts artifacts: 'reports.html', fingerprint: true 
+                echo 'Building...'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo 'Testing...'
             }
         }
         stage('Deploy') {
