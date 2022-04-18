@@ -11,10 +11,10 @@ pipeline {
             steps {
                 echo 'Prepare config file...'
                 echo 'Removing existing reports...'
-                sh 'ls'
-                sh 'cd ..'
-                sh 'ls'
-                //powershell 'Write-Host \'Hello World!\''
+                // sh 'ls'
+                // sh 'cd ..'
+                // sh 'ls'
+                powershell 'Write-Host \'Hello World!\''
             }
         }
         stage('Test') {
