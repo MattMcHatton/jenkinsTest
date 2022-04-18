@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    properties ([
-
-    ])
-
     stages {
         stage('Build') {
             steps {
