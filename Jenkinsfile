@@ -11,6 +11,7 @@ pipeline {
             steps {
                 echo 'Prepare config file...'
                 echo 'Removing existing reports...'
+                powershell 'Write-Host \'Hello World!\''
             }
         }
         stage('Test') {
