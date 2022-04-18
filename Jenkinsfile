@@ -12,6 +12,8 @@ pipeline {
                 echo 'Prepare config file...'
                 echo 'Removing existing reports...'
                 sh 'ls'
+                sh 'cd ..'
+                sh 'ls'
                 //powershell 'Write-Host \'Hello World!\''
             }
         }
