@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                sh 'make' 
+                archiveArtifacts artifacts: 'reports.html', fingerprint: true 
             }
         }
         stage('Test') {
