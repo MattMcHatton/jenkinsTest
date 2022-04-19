@@ -11,10 +11,8 @@ pipeline {
             steps {
                 echo 'Prepare config file...'
                 echo 'Removing existing reports...'
-                // sh 'ls'
-                // sh 'cd ..'
-                // sh 'ls'
-                sh 'Write-Host \'Hello World!\''
+                //bat should be used when running a script on Windows
+                //sh should be used when running a script on Linux/Unix
             }
         }
         stage('Test') {
